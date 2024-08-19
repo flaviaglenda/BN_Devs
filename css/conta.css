@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    height: fit-content;
+    overflow-y: hidden;
+    display: flex;
+    min-width: 80vh;
+    max-width: 120vh;
+    background-color: var(--lightBlue2);
+}
+
+#main-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#main-sidebar button {
+    padding: 6px;
+    font-weight: bold;
+}
+
+#main-info {
+    overflow-y: scroll;
+    width: 80%;
+    height: 100%;
+}
+
+#main-info section {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
