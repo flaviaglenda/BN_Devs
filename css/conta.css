@@ -1,3 +1,11 @@
+:root {
+    --formInputsBackground: rgb(220, 220, 235);
+    --formInputsBackgroundHover: rgb(220, 220, 255);
+    --formInputsBorder: 2px rgba(0, 0, 0, 0.3) solid;
+    --formInputsBorderHoverColor: rgba(0, 0, 0, 0.2);
+    --selectedGreenItem: rgba(180, 255, 180, 0.5);
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -7,33 +15,187 @@ body {
 main {
     width: 50%;
     margin: 0 auto;
-    height: fit-content;
+    height: 100vh;
     overflow-y: hidden;
     display: flex;
     min-width: 80vh;
     max-width: 120vh;
-    background-color: var(--lightBlue2);
 }
 
 #main-sidebar {
     display: flex;
     flex-direction: column;
+    background-color: var(--lightBlue2);
     width: 20%;
 }
 
 #main-sidebar button {
     padding: 6px;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: rgba(0, 0, 0, 0.1) 2px solid;
+}
+
+#main-sidebar button:hover {
+    border-color: rgba(255, 255, 255, 0.25)
+}
+
+#main-sidebar button:focus {
+    background-color: rgba(180, 255, 180, 0.5);
 }
 
 #main-info {
     overflow-y: scroll;
     width: 80%;
     height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 #main-info section {
+    padding: 36px 0;
+    /* height: 25vh; */
+}
+
+#main-info::-webkit-scrollbar {
+    appearance: none;
+    width: 12px;
+}
+
+#main-info::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 150, 170, 0.5);
+    box-sizing: border-box;
+}
+
+#main-info::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(127, 150, 170);
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 18px !important
+}
+
+/* Conta */
+
+#info-conta {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 25vh;
+}
+
+#info-conta > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+#info-conta-data {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+#info-conta-data article {
+    margin-left: 20%;
+}
+
+#info-conta-data article p {
+    font-size: 16px;
+}
+
+#info-conta svg {
+    width: 100%;
+    height: 80%;
+    margin: auto 0;
+}
+
+/* Configurações */
+
+
+
+/* Editar Informações */
+
+#info-editar {
+    display: flex;
+}
+
+#info-editar-block {
+    width: 100%;
+    margin: 3% 6%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+}
+
+#info-editar form {
+    display: flex;
+    flex-direction: column;
+}
+
+#info-editar h3 {
+    text-align: center;
+    font-weight: normal;
+    margin: 12px 0;
+}
+
+#info-editar article {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 24px;
+}
+
+#info-editar input {
+    padding: 4px;
+    border-radius: 6px;
+    border: var(--formInputsBorder);
+    outline: none;
+    background-color: var(--formInputsBackground);
+}
+
+#info-editar input:hover, #info-editar input:focus {
+    border-color: var(--formInputsBorderHoverColor);
+    background-color: var(--formInputsBackgroundHover);
+}
+
+#info-editar button[type=submit] {
+    margin: 8px auto;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: var(--formInputsBorder);
+    box-sizing: border-box;
+    background-color: var(--formInputsBackground);
+}
+
+#info-editar button[type=submit]:hover {
+    border-color: var(--formInputsBorderHoverColor);
+    background-color: var(--formInputsBackgroundHover);
+}
+
+#info-editar button[type=submit]:focus {
+    border-color: var(--formInputsBorderHoverColor);
+    background-color: var(--selectedGreenItem);
+}
+
+#info-editar label {
+    text-indent: 8px;
+}
+
+#info-editar hr {
+    margin-top: 12px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+}
+
+#info-editar-passwordblock {
+    display: flex;
+    justify-content: space-around;
+}
+
+#info-editar-passwordblock article {
+    width: 50%;
 }

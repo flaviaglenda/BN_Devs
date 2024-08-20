@@ -24,6 +24,13 @@ svg {
     width: 20px
 }
 
+.alerta-incompleto {
+    color: yellow;
+    background-color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
 /* HEADER */
 header {
     background-color: var(--orange);
@@ -74,3 +81,41 @@ nav svg {
 }
 
 /* FOOTER */
+footer {
+    background-color: rgba(50, 50, 50, 0.8);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+    padding-bottom: 4px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+footer div.footer-group {
+    flex-direction: row;
+    gap: 24px;
+}
+
+footer a, footer p, footer i, footer li {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: normal;
+}
+
+#footer-address *, #footer-manual *, #footer-devs * {
+    width: 240px;
+}
+
+#footer-instagram {
+    text-decoration: none;
+}
+
+#footer-logo {
+    filter: grayscale(100%);
+    width: 48px;
+    height: 48px;
+    margin: auto 0;
+}
