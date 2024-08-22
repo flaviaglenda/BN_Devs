@@ -1,0 +1,135 @@
+
+#corpo{
+    height: 68vh;
+}
+#login{
+    background-image: linear-gradient(to bottom, rgb(38, 155, 214), rgb(4, 74, 95));
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 30%; 
+    height: 84%;
+    margin-top: 10%;
+    margin-left: 36%;
+    border-radius: 20px;
+
+}
+#formulario{
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+#formulario::placeholder {
+    color: white;
+}
+
+.question{
+    background-color: 0;
+    width: 50%;
+    background-color: rgb(20, 168, 208, 0.0);
+    border-style: none;
+    color: rgb(13, 158, 187);
+    outline: none;
+    margin-top: 5%;
+
+   
+}
+label{
+    color: aqua;
+    background-color: rgb(0, 157, 255, 0.0);
+    outline: none;
+}
+#cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.butãodesima{
+    width: 18%;
+    background-color: rgb(8, 134, 197, 0.0);
+    border: rgb(191, 191, 191) 1px solid;
+    font-size: medium;
+}
+#botãosdebaixo{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5%;
+    align-items: center;
+}
+.bonito{
+    width: 40%;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    margin-top: 2%;
+}
+.ládebaixo{
+    width: 30%;
+    
+    margin-top: 10%;
+    background-color:  rgb(8, 134, 197, 0.0);
+    font-size: x-large;
+    
+    color: black;
+    border: white 1px solid;
+}
+hr{
+    color: rgb(247, 245, 245, 0.5) solid 2px;
+    width: 60%;
+}
+
+.logocom{
+    width: 20px;
+    align-items: start;
+}
+#oi{
+    margin-bottom: 2%;
+}
+
+.butãodesima:hover{
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(8, 134, 197), rgb(4, 74, 95));
+}
+
+.ládebaixo:hover{
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(8, 134, 197), rgb(4, 74, 95));    
+}
+
+.icon{
+    width: 6%;
+    margin-left:20% ;
+}
+
+.diferente{
+    width: 9%;
+    margin-left: 5%;
+}
+
+#fim{
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#papelaria{
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.iconfim{
+    width: 6%;
+}
+.bonito:hover{
+    border: rgb(0, 0, 0) 2px;
+}
+
