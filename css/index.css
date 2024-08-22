@@ -1,0 +1,121 @@
+.carousel {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* Adjust based on the number of slides */
+}
+
+.carousel-slide {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .carousel-slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .carousel-slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-slides {
+    transform: translateX(-200%);
+}
+
+/* Controles de Navegação */
+.carousel-navigation {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-control {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Carrossel de Cards */
+.card-carousel {
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 600%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 50%;
+    height: 100px; /* Defina a altura desejada */
+    width: 100px;  /* Defina a largura igual à altura para garantir a forma circular */
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 0 16.6666%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+
+#card1:checked ~ .card-slides {
+    transform: translateX(0%);
+}
+
+#card2:checked ~ .card-slides {
+    transform: translateX(-16.6666%);
+}
+
+#card3:checked ~ .card-slides {
+    transform: translateX(-33.3333%);
+}
+
+#card4:checked ~ .card-slides {
+    transform: translateX(-50%);
+}
+
+#card5:checked ~ .card-slides {
+    transform: translateX(-66.6666%);
+}
+
+#card6:checked ~ .card-slides {
+    transform: translateX(-83.3333%);
+}
+
+/* Ajustes para o círculo do carrossel de cartões */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

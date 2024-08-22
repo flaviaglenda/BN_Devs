@@ -19,3 +19,5 @@ function writeIn(elementId, text) {
     }
 })("alerta-incompleto")
 
+
+// Pensar em meios para implementar modo claro e escuro.

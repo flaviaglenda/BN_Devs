@@ -1,9 +1,17 @@
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
 :root {
     --blue: #2EB2FA;
     --lightBlue1: #7DB8D8;
     --lightBlue2: #6c8392;
     --darkBlue1: #334b58;
-    --darkBlue2: #3c4246;
+    --darkBlue2: #000000;
     --orange: #FE8F00;
     --lightOrange1: #E2A85D;
     --lightOrange2: #a89070;
@@ -80,6 +88,10 @@ nav svg {
     width: 36px;
 }
 
+svg#arrow {
+    transform: scale(120%);
+}
+
 /* FOOTER */
 footer {
     background-color: rgba(50, 50, 50, 0.8);
@@ -87,6 +99,7 @@ footer {
     justify-content: space-evenly;
     padding: 16px;
     padding-bottom: 4px;
+    font-size: 12px;
 }
 
 footer div {

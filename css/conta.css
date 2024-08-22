@@ -1,9 +1,12 @@
 :root {
-    --formInputsBackground: rgb(220, 220, 235);
+    --formInputsBackground: rgb(220, 220, 235, 0.5);
     --formInputsBackgroundHover: rgb(220, 220, 255);
     --formInputsBorder: 2px rgba(0, 0, 0, 0.3) solid;
     --formInputsBorderHoverColor: rgba(0, 0, 0, 0.2);
     --selectedGreenItem: rgba(180, 255, 180, 0.5);
+    --checkboxSlideSize: 16px;
+    --titleHeight: 30px;
+    --blockBorderRadius: 8px;
 }
 
 body {
@@ -22,6 +25,10 @@ main {
     max-width: 120vh;
 }
 
+h2 {
+    text-align: center;
+}
+
 #main-sidebar {
     display: flex;
     flex-direction: column;
@@ -34,6 +41,7 @@ main {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.3);
     border: rgba(0, 0, 0, 0.1) 2px solid;
+    color: white;
 }
 
 #main-sidebar button:hover {
@@ -49,10 +57,12 @@ main {
     width: 80%;
     height: 100%;
     background-color: rgba(128, 128, 128, 0.5);
+    color: white;
 }
 
 #main-info section {
     padding: 36px 0;
+    padding-top: 12px;
     /* height: 25vh; */
 }
 
@@ -123,22 +133,80 @@ main {
 
 /* Configurações */
 
+#info-config form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
+#info-config {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+#info-config article {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+}
+
+.checkbox-slide-div {
+    width: calc(var(--checkboxSlideSize) * 2);
+    height: var(--checkboxSlideSize);
+    padding: 2px 4px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+.checkbox-slide-div input[type=checkbox] {
+    position: absolute;
+    height: var(--checkboxSlideSize);
+    width: calc(var(--checkboxSlideSize) * 2);
+    appearance: none;
+    padding: 2px;
+}
+
+.checkbox-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.checkbox-slide-ball {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(200, 0, 0);
+    border-radius: 100%;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.checkbox-slide-div input[type=checkbox]:checked + .checkbox-slide .checkbox-slide-ball {
+    transform: translate(100%, 0%);
+    background-color: var(--blue);
+}
 
 /* Editar Informações */
 
 #info-editar {
     display: flex;
+    flex-direction: column;
 }
 
 #info-editar-block {
-    width: 100%;
+    /* width: 100%; */
     margin: 3% 6%;
-    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: rgba(255, 255, 255, 0.45); */
+    background-color: var(--lightBlue2);
     border: 1px rgba(0, 0, 0, 0.2) solid;
-    border-radius: 8px;
+    border-radius: var(--blockBorderRadius);
     display: flex;
     flex-direction: column;
+    /* color: black; */
 }
 
 #info-editar form {
@@ -159,6 +227,8 @@ main {
 }
 
 #info-editar input {
+    width: 100%;
+    margin: 0 auto;
     padding: 4px;
     border-radius: 6px;
     border: var(--formInputsBorder);
@@ -171,21 +241,23 @@ main {
     background-color: var(--formInputsBackgroundHover);
 }
 
-#info-editar button[type=submit] {
+.info-alterar {
     margin: 8px auto;
     padding: 8px 12px;
     font-size: 16px;
     border: var(--formInputsBorder);
     box-sizing: border-box;
     background-color: var(--formInputsBackground);
+    border-radius: 12px;
+    color: white;
 }
 
-#info-editar button[type=submit]:hover {
+.info-alterar:hover {
     border-color: var(--formInputsBorderHoverColor);
     background-color: var(--formInputsBackgroundHover);
 }
 
-#info-editar button[type=submit]:focus {
+.info-alterar:focus {
     border-color: var(--formInputsBorderHoverColor);
     background-color: var(--selectedGreenItem);
 }
@@ -199,7 +271,6 @@ main {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    border-color: black;
 }
 
 #info-editar-passwordblock {
@@ -209,4 +280,61 @@ main {
 
 #info-editar-passwordblock article {
     width: 50%;
+}
+
+.info-editar-descricao {
+    color: rgba(210, 210, 210, 1);
+    text-align: center;
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+/* Pedidos - Cupons */
+
+#info-ped-andamento, #info-ped-concluidos, #info-cupons {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-list {
+    margin: 3% 6%;
+    background-color: var(--lightBlue2);
+    height: 100px;
+    border-radius: var(--blockBorderRadius);
+    padding: 12px;
+    height: fit-content;
+}
+
+.info-list-element {
+    padding: 4px;
+}
+
+.info-list h3 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.info-list p {
+    font-size: 14px;
+    margin: 0 4px;
+    font-weight: bold;
+}
+
+.info-list b {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.info-list-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    row-gap: 8px;
+}
+
+.info-list .info-list-element {
+    width: 100%;
+    background-color: var(--darkBlue1);
+    border-radius: var(--blockBorderRadius);
+    display: flex;
+    flex-direction: column;
 }
