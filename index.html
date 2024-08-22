@@ -5,9 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="keywords" content="Papelaria BoasNovas Material Produtos">
-        <title>Início - Boas Novas Papelaria</title>
+        <title>Contato - Boas Novas Papelaria</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Matemasie&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/contato.css">
+        <link rel="stylesheet" href="../BN_Devs/css/index.css">
         <link rel="shortcut icon" href="" type="image/x-icon">
         <script src="./js/script.js" defer></script>
     </head>
@@ -52,10 +56,77 @@
 
         </header>
         <main>
+          <div class="carousel-container">
+            <div class="carousel">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                
+                <div class="carousel-slides">
+                    <div class="carousel-slide"><img src="img/Capturar.PNG" alt="Guitarra"></div>
+                    <div class="carousel-slide"><img src="img2.jpg" alt="Teclado"></div>
+                    <div class="carousel-slide"><img src="img3.jpg" alt="Violão"></div>
+                </div>
+
+                <div class="carousel-navigation">
+                    <label for="slide1" class="carousel-control prev">&#10094;</label>
+                    <label for="slide2" class="carousel-control next">&#10095;</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrossel de Cards -->
+        <div class="card-carousel">
+            <div class="carousel">
+                <input type="radio" name="card-carousel" id="card1" checked>
+                <input type="radio" name="card-carousel" id="card2">
+                <input type="radio" name="card-carousel" id="card3">
+                <input type="radio" name="card-carousel" id="card4">
+                <input type="radio" name="card-carousel" id="card5">
+                <input type="radio" name="card-carousel" id="card6">
+                
+                <div class="card-slides">
+                    <div class="card">Entre na sua conta</div>
+                    <div class="card">Insira sua localização</div>
+                    <div class="card">Meios de pagamento</div>
+                    <div class="card">Menos de R$100</div>
+                    <div class="card">Mais vendidos</div>
+                    <div class="card">Compra garantida</div>
+                </div>
+
+                <div class="carousel-navigation">
+                    <label for="card1" class="carousel-control prev">&#10094;</label>
+                    <label for="card2" class="carousel-control next">&#10095;</label>
+                </div>
+            </div>
+        </div>
+
 
         </main>
         <footer>
-
-        </footer>
+          <img src="img/logo-boasnovas.png" alt="Logo BoasNovas" id="footer-logo">
+          <div id="footer-devs">
+              <p><b>Desenvolvido por <u>BN Devs</u></b></p>
+              <p>Equipe responsável:</p>
+              <p><i>Guilherme Paiva, Lanna Kamilly, Flávia Glenda, Miguel Borges</i></p>
+          </div>
+          <div class="footer-group">
+              <div>
+                  <p><b>Contatos Boas Novas:</b></p>
+                  <ul>
+                      <li><u>Instagram:</u> <a href="https://www.instagram.com/papelariaboasnovas/" id="footer-instagram" target="_blank">@papelariaboasnovas</a></li>
+                      <li><u>Whatsapp:</u> (12) 98897-9497</li>
+                      <li><u>Email:</u> </li>
+                  </ul>
+              </div>
+              <div id="footer-address">
+                  <p><b>Nosso endereço:</b></p>
+                  <p><i>AV Luiz Benedito de Medeiros n'220 Galo Branco SJC, São José dos Campos</i></p>
+              </div>
+          </div>
+          <div id="footer-manual">
+              <a href="https://www.canva.com/design/DAGHeBvZ4-Y/Pm_GaNIMyLYQLhP2qBR3EQ/view?utm_content=DAGHeBvZ4-Y&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">Manual de Uso de Marca (Boas Novas + BN Devs)</a>
+          </div>
+      </footer>
     </body>
 </html>

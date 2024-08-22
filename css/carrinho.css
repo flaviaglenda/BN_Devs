@@ -4,7 +4,11 @@ body {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+=======
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+>>>>>>> 47029797cad5e0a505d2c250da23b975ef2ea7d3
 }
 
 main {
