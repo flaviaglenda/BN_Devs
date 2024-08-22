@@ -302,11 +302,16 @@ h2 {
     height: 100px;
     border-radius: var(--blockBorderRadius);
     padding: 12px;
+    height: fit-content;
+}
+
+.info-list-element {
+    padding: 4px;
 }
 
 .info-list h3 {
     text-align: center;
-    margin: 8px 0;
+    margin-bottom: 8px;
 }
 
 .info-list p {

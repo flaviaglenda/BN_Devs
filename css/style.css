@@ -80,6 +80,10 @@ nav svg {
     width: 36px;
 }
 
+svg#arrow {
+    transform: scale(120%);
+}
+
 /* FOOTER */
 footer {
     background-color: rgba(50, 50, 50, 0.8);
