@@ -80,17 +80,37 @@
                     </div>
                 </section>
                 <section id="info-config">
-                    <p>Configurações</p>
-                    <p class="alerta-incompleto"></p>
-                    <!-- Sem ideia de configurações. Receber notificações? Algum tipo de personalização no site? -->
+                    <h2>Configurações</h2>
+                    <form action="#">
+                        <article>
+                            <label for="config1">Modo Escuro</label>
+                            <div class="checkbox-slide-div">
+                                <input type="checkbox" name="config1" id="config1">
+                                <div class="checkbox-slide">
+                                    <div class="checkbox-slide-ball"></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <label for="config2">Receber notificações</label>
+                            <div class="checkbox-slide-div">
+                                <input type="checkbox" name="config2" id="config2">
+                                <div class="checkbox-slide">
+                                    <div class="checkbox-slide-ball"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </form>
+                    <!-- Configurações: Modo Claro/Escuro;  -->
                 </section>
                 <section id="info-editar">
+                    <h2>Editar Informações</h2>
                     <div id="info-editar-block">
                         <form action="#" method="post">
                             <h3>Informações de Perfil e Entrega</h2>
                             <article>
                                 <label for="info-editar-name">Nome:</label>
-                                <input type="text" name="name" id="info-editar-name" placeholder="Digite um novo nome...">
+                                <input type="text" name="name" id="info-editar-name" pattern="[a-zA-Z]{1,}" placeholder="Digite um novo nome...">
                             </article>
                             <article>
                                 <label for="info-editar-address">Endereço:</label>
@@ -98,36 +118,49 @@
                             </article>
                             <article>
                                 <label for="info-editar-cep">CEP:</label>
-                                <input type="text" name="cep" id="info-editar-cep" placeholder="Digite um novo CEP...">
+                                <input type="text" name="cep" id="info-editar-cep" pattern="[0-9\-\.]{1,}" placeholder="Digite um novo CEP...">
                             </article>
-                            <button type="submit">Alterar</button>
+                            <button type="submit" class="info-alterar">Alterar</button>
                         </form>
                         <hr>
                         <form action="#">
                             <h3>Informações Pessoais</h2>
                             <article>
                                 <label for="info-editar-email">Email:</label>
-                                <input type="text" name="email" id="info-editar-email">
+                                <input type="text" name="email" id="info-editar-email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+.[a-z.]{2,}" placeholder="Digite um novo email...">
                             </article>
                             <article>
                                 <label for="info-editar-number">Número:</label>
-                                <input type="text" name="number" id="info-editar-number">
+                                <input type="text" name="number" id="info-editar-number" pattern="[0-9+-]{,}" placeholder="Digite um novo número...">
                             </article>
                             <div id="info-editar-passwordblock">
                                 <article>
                                     <label for="info-editar-password">Senha:</label>
-                                    <input type="text" name="password" id="info-editar-password">
+                                    <input type="text" name="password" id="info-editar-password" pattern="[0-9a-zA-Z_\.#\&\-\@]{6,16}" placeholder="Digite uma nova senha...">
                                 </article>
                                 <article>
                                     <label for="info-editar-passwordconfirm">Confirmar Senha:</label>
-                                    <input type="text" name="password-confirm" id="info-editar-passwordconfirm">
+                                    <input type="text" name="password-confirm" id="info-editar-passwordconfirm" pattern="[0-9a-zA-Z_\.#\&\-\@]{6,16}" placeholder="Confirme sua nova senha...">
                                 </article>
                             </div>
-                            <button type="submit">Alterar</button>
+                            <p class="info-editar-descricao">A senha deve conter caracteres de <b>a-z</b>, <b>A-Z</b>, <b>0-9</b> e especiais (<b>_ . # & - @</b>).</p>
+                            <p class="info-editar-descricao">Somente de <b>6</b> a <b>16</b> caracteres.</p>
+                            <button type="submit" class="info-alterar">Alterar</button>
                         </form>
                     </div>
                 </section>
-                <section id="info-ped-andamento">Pedidos Andamento</section>
+                <section id="info-ped-andamento">
+                    <h2>Pedidos em Andamento</h2>
+                    <div class="info-list info-list-grid">
+                        <div class="info-list-element">
+                            <h3>__ Produtos</h3>
+                            <p><b>Data da compra: </b><span>--/--/----</span></p>
+                        </div>
+                        <div class="info-list-element"></div>
+                        <div class="info-list-element"></div>
+                        <div class="info-list-element"></div>
+                    </div>
+                </section>
                 <section id="info-ped-concluidos">Pedidos Concluidos</section>
                 <section id="info-cupons">Cupons</section>
             </section>
