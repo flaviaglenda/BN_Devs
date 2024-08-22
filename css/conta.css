@@ -82,6 +82,8 @@ main {
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.3);
     height: 25vh;
+    padding: 56px 0 !important;
+    color: white;
 }
 
 #info-conta > div {
@@ -102,6 +104,15 @@ main {
 
 #info-conta-data article p {
     font-size: 16px;
+}
+
+#info-data-numdatas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#info-data-numdatas article {
+    margin: 0;
 }
 
 #info-conta svg {
