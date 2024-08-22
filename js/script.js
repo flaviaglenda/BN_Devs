@@ -18,3 +18,4 @@ function writeIn(elementId, text) {
         element.innerHTML = "Conteúdo Incompleto"
     }
 })("alerta-incompleto")
+
