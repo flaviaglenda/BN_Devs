@@ -11,30 +11,30 @@
 <body>
 
     <form action="" method="post">
+        <h1>Cadastre-se</h1>
+        <section>
+            <label for="nome">Nome: </label>
+            <input type="text" name = "nome" required>
+        </section>
 
-    <section>
-        <label for="nome">Nome: </label>
-        <input type="text" name = "nome" required>
-    </section>
+        <section>
+            <label for="email">Digite seu Email: </label>
+            <input type="email" name = "email" required>
+        </section>
 
-    <section>
-        <label for="email">Digite seu Email: </label>
-        <input type="email" name = "email" required>
-    </section>
+        <section>
+            <label for="senha">Digite sua senha: </label>
+            <input type="password" name = "senha" required>
+        </section>
 
-    <section>
-        <label for="senha">Digite sua senha: </label>
-        <input type="password" name = "senha" required>
-    </section>
+        <section>
+            <label for="comf_senha">Comfirme a sua senha: </label>
+            <input type="password" name = "comf_senha" required>
+        </section>
 
-    <section>
-        <label for="comf_senha">Comfirme a sua senha: </label>
-        <input type="password" name = "comf_senha" required>
-    </section>
-
-    <input type="submit" >
+        <input type="submit" id="enviar" >
         
- </form>
+    </form>
     
 </body>
 </html>
