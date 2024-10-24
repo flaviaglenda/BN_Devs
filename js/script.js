@@ -19,5 +19,58 @@ function writeIn(elementId, text) {
     }
 })("alerta-incompleto")
 
+let loginForm = document.getElementById('loginForm');
+
+if (loginForm) {
+    loginForm.addEventListener("submit", event => {
+        event.preventDefault();
+        const form = event.target;
+
+        if (form.method !== "post") return console.log("metodo post pls");
+
+        if (!(form.email && form.senha)) return console.log("Precisa de email e senha");
+        let email = form.email.value;
+        let senha = form.senha.value;
+
+        if (typeof email !== "string") return console.log("email string pls");
+        if (typeof senha !== "string") return console.log("senha string pls");
+
+        if (email.length > 80) return console.log("email grande");
+        if (email.length == 0) return console.log("email vazio");
+        if (senha.length > 64) return console.log("senha grande");
+        if (senha.length < 8) return console.log("senha pequena");
+
+        form.submit();
+    });
+}
+
+let registroForm = document.getElementById('registroForm');
+
+if (registroForm) {
+    registroForm.addEventListener("submit", event => {
+        event.preventDefault();
+        const form = event.target;
+
+        if (form.method !== "post") return console.log("metodo errado");
+
+        if (!(form.email && form.senha && form.nome)) return console.log("precisa email senha e nome");
+        let nome = form.nome.value
+        let email = form.email.value
+        let senha = form.senha.value
+
+        if (typeof nome !== "string") return console.log("nome string");
+        if (typeof email !== "string") return console.log("email string");
+        if (typeof senha !== "string") return console.log("senha string");
+
+        if (nome.length > 150) return console.log("nome grande");
+        if (nome.length < 2) return console.log("nome pequeno");
+        if (email.length > 80) return console.log("email grande");
+        if (nome.length < 5) return console.log("email pequeno");
+        if (email.length > 64) return console.log("senha grande");
+        if (nome.length < 8) return console.log("senha pequeno");
+
+        form.submit();
+    })
+}
 
 // Pensar em meios para implementar modo claro e escuro.
