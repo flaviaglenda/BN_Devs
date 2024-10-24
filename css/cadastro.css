@@ -6,16 +6,23 @@
     padding: 0;
 }
 body{
-    width: 100%;
-    height: 100%;
-    background-color: var(--darkBlue1) ;
+    width: 100vh;
+    height: 100vh;
+    background-color: var(--darkBlue1);
 }
 
 
 form {
+    background-color: white;
     display: flex;
     flex-direction: column;
+    width: 30%;
+    height: 60%;
 }
 section{
     display: flex;
+}
+
+input{
+    height: 20%;
 }
