@@ -3,7 +3,7 @@
     height: 68vh;
 }
 #login{
-    background-image: linear-gradient(to bottom, rgb(38, 155, 214), rgb(4, 74, 95));
+    background-color: white;
     display: flex;
     flex-direction: column;
     border: none;
@@ -25,7 +25,7 @@
 }
 
 #formulario::placeholder {
-    color: white;
+    color:black;
 }
 
 .question{
@@ -75,14 +75,14 @@ label{
     width: 30%;
     
     margin-top: 10%;
-    background-color:  rgb(8, 134, 197, 0.0);
+    background-color:  rgba(213, 213, 213,);
     font-size: x-large;
-    
+    border-radius: 20px;
     color: black;
     border: white 1px solid;
 }
 hr{
-    color: rgb(247, 245, 245, 0.5) solid 2px;
+    color: rgba(146, 146, 146,) solid 2px;
     width: 60%;
 }
 
@@ -95,13 +95,13 @@ hr{
 }
 
 .butãodesima:hover{
-    color: white;
-    background-image: linear-gradient(to bottom, rgb(8, 134, 197), rgb(4, 74, 95));
+    color:black;
+    background-color: rgb(167, 167, 167);    
 }
 
 .ládebaixo:hover{
-    color: white;
-    background-image: linear-gradient(to bottom, rgb(8, 134, 197), rgb(4, 74, 95));    
+    color:black;
+   background-color: rgb(167, 167, 167);    
 }
 
 .icon{
@@ -116,7 +116,7 @@ hr{
 
 #fim{
     
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
