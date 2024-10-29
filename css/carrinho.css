@@ -4,11 +4,7 @@ body {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-=======
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
->>>>>>> 47029797cad5e0a505d2c250da23b975ef2ea7d3
 }
 
 main {
@@ -170,3 +166,84 @@ input[name="carrossel5"]:nth-of-type(3):checked ~ .imagenscarrossel {
 .passarcarrossel:hover {
     background-color: rgba(216, 213, 213, 0.522);
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.carrosselpequeno {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.imagenscarrossel {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.controleCarrossel {
+    text-align: center;
+}
+
+.controleCarrossel label {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #ccc;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+.paragrafocarrinho {
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.quantidade {
+    width: 50px;
+    margin: 10px 0;
+}
+
+.botaoacao {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botaoacao:hover {
+    background-color: #218838;
+}
+
+.carrinho {
+    position: fixed;
+    right: 20px;
+    top: 70px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+}
+
+.carrinho h2 {
+    margin: 0;
+}
+
+.item-carrinho {
+    margin-bottom: 10px;
+}
+
