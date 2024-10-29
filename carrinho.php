@@ -7,11 +7,12 @@
         <meta name="keywords" content="Papelaria BoasNovas Material Produtos">
         <title>Carrinho - Boas Novas Papelaria</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Matemasie&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Matemasie&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/carrinho.css">
         <link rel="shortcut icon" href="img/logo-boasnovas.png" type="image/x-icon">
+          <script src="./js/script.js" defer></script>
         <script src="./js/script.js" defer></script>
     </head>
     <body>
@@ -192,7 +193,7 @@
                         </div>
                     </div>
                     <div class="paragrafos">
-                        <p class="nomeproduto">Helect Calculadora científica de<br> engenharia de 2 linhas, adequada para <br>jescola e negócios (preto)</p>
+                        <p class="nomeproduto">Helect Calculadora científica de engenharia de 2 linhas, adequada para escola e negócios (preto)</p>
                         <p class="descricao">
                             <button class="botaoacao">Excluir</button>
                             <button class="botaoacao">Comprar</button>
