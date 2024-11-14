@@ -61,7 +61,7 @@
       <div class="container">
 
         <a href="#" class="header-logo">
-          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+          <img src="./img/logo.png" alt="Anon's logo" width="90" height="45">
         </a>
 
         <div class="header-search-container">
@@ -857,7 +857,7 @@
                     <img src="./assets/images/icons/dress.svg" alt="clothes" width="20" height="20"
                       class="menu-title-img">
 
-                    <p class="menu-title">Clothes</p>
+                    <p class="menu-title">Eletronicos</p>
                   </div>
 
                   <div>
@@ -871,21 +871,21 @@
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Shirt</p>
+                      <p class="product-name">Kids</p>
                       <data value="300" class="stock" title="Available Stock">300</data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">shorts & jeans</p>
+                      <p class="product-name">Decoraçaõ</p>
                       <data value="60" class="stock" title="Available Stock">60</data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">jacket</p>
+                      <p class="product-name">Material Escolar</p>
                       <data value="50" class="stock" title="Available Stock">50</data>
                     </a>
                   </li>
@@ -909,7 +909,7 @@
                     <img src="./assets/images/icons/shoes.svg" alt="footwear" class="menu-title-img" width="20"
                       height="20">
 
-                    <p class="menu-title">Footwear</p>
+                    <p class="menu-title">Material Escolar</p>
                   </div>
 
                   <div>
@@ -961,7 +961,7 @@
                     <img src="./assets/images/icons/jewelry.svg" alt="clothes" class="menu-title-img" width="20"
                       height="20">
 
-                    <p class="menu-title">Jewelry</p>
+                    <p class="menu-title">Kids</p>
                   </div>
 
                   <div>
@@ -998,57 +998,7 @@
 
               </li>
 
-              <li class="sidebar-menu-category">
-
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-
-                  <div class="menu-title-flex">
-                    <img src="./assets/images/icons/perfume.svg" alt="perfume" class="menu-title-img" width="20"
-                      height="20">
-
-                    <p class="menu-title">Perfume</p>
-                  </div>
-
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
-
-                </button>
-
-                <ul class="sidebar-submenu-category-list" data-accordion>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Clothes Perfume</p>
-                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Deodorant</p>
-                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">jacket</p>
-                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">dress & frock</p>
-                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
-                    </a>
-                  </li>
-
-                </ul>
-
-              </li>
+            
 
               <li class="sidebar-menu-category">
 
@@ -1058,7 +1008,7 @@
                     <img src="./assets/images/icons/cosmetics.svg" alt="cosmetics" class="menu-title-img" width="20"
                       height="20">
 
-                    <p class="menu-title">Cosmetics</p>
+                    <p class="menu-title">Decoração</p>
                   </div>
 
                   <div>
@@ -1110,7 +1060,7 @@
                     <img src="./assets/images/icons/glasses.svg" alt="glasses" class="menu-title-img" width="20"
                       height="20">
 
-                    <p class="menu-title">Glasses</p>
+                    <p class="menu-title">Estojo</p>
                   </div>
 
                   <div>
@@ -1931,114 +1881,30 @@
         <ul class="footer-nav-list">
 
           <li class="footer-nav-item">
-            <h2 class="nav-title">Popular Categories</h2>
+            <h2 class="nav-title">Integrantes</h2>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Fashion</a>
+            <a href="#" class="footer-nav-link">Lanna</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Electronic</a>
+            <a href="#" class="footer-nav-link">Flávia</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Cosmetic</a>
+            <a href="#" class="footer-nav-link">Miguel</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Health</a>
+            <a href="#" class="footer-nav-link">Guilherme</a>
           </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Watches</a>
-          </li>
-
+       
         </ul>
 
-        <ul class="footer-nav-list">
-        
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
-          </li>
-        
-        </ul>
-
-        <ul class="footer-nav-list">
-        
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Our Company</h2>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Delivery</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Legal Notice</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Terms and conditions</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">About us</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Secure payment</a>
-          </li>
-        
-        </ul>
-
-        <ul class="footer-nav-list">
-        
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Services</h2>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
-          </li>
-        
-        </ul>
+       
+      
 
         <ul class="footer-nav-list">
 
@@ -2052,8 +1918,7 @@
             </div>
 
             <address class="content">
-              419 State 414 Rte
-              Beaver Dams, New York(NY), 14812, USA
+              Rua Jabur Nascer
             </address>
           </li>
 
@@ -2062,7 +1927,7 @@
               <ion-icon name="call-outline"></ion-icon>
             </div>
 
-            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+            <a href="tel:+607936-8058" class="footer-nav-link">(12) 98897-9497</a>
           </li>
 
           <li class="footer-nav-item flex">
@@ -2070,7 +1935,7 @@
               <ion-icon name="mail-outline"></ion-icon>
             </div>
 
-            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+            <a href="mailto:example@gmail.com" class="footer-nav-link">papelariaboasnovas@gmail</a>
           </li>
 
         </ul>
@@ -2121,10 +1986,10 @@
 
       <div class="container">
 
-        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+      
 
         <p class="copyright">
-          Copyright &copy; <a href="#">Anon</a> all rights reserved.
+          BN DEVS &copy; <a href="#">2024</a> EMPRESA.
         </p>
 
       </div>
