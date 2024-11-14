@@ -433,6 +433,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .desktop-navigation-menu { display: none; }
 
 .header-main {
+  background-color: #fe8f00;
   padding: 20px 0;
   border-bottom: 1px solid var(--cultured);
 }
@@ -1554,7 +1555,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   transition: var(--transition-timing);
 }
 
-.blog-title:hover { color: var(--salmon-pink); }
+.blog-title:hover { color: #fe8f00; }
 
 .blog-meta {
   color: var(--sonic-silver);
@@ -1657,7 +1658,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: var(--salmon-pink);
+  background: #fe8f00;
   width: 60px;
   height: 1px;
 }
@@ -1673,7 +1674,7 @@ footer {
   transition: var(--transition-timing);
 }
 
-.footer-nav-link:hover { color: var(--salmon-pink); }
+.footer-nav-link:hover { color: #fe8f00; }
 
 .footer-nav-item.flex {
   display: flex;
