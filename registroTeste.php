@@ -37,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <label for="">senha</label><br>
             <input type="password" name="senha" max="64" min="8" required><br>
             <button type="submit">Enviar</button>
+            <p>só um texte</p>
         </form>
     </body>
 </html>
