@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/carrinhocompras.css">
     <link rel="shortcut icon" href="img/logo-boasnovas.png" type="image/x-icon">
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
