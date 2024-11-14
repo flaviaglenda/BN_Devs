@@ -1,179 +1,225 @@
-* {
-    box-sizing: border-box;
+/* Definindo uma fonte-base para todo o carrinho */
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #f9f9f9;
+    color: #4a4a4a;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-  }
-
-.carrinho-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-family: 'Jost', sans-serif;
-    color: #333;
+}
+
+/* Contêiner principal do carrinho */
+.carrinho-container {
+    width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
-    background-color: #f4f4f4;
     border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
 }
 
+/* Título do carrinho */
 .carrinho-container h2 {
-    font-size: 1.8em;
-    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a4a4a;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
-.carrinho-itens {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+/* Barra de progresso */
+.progresso-etapas {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
-    padding: 20px;
-    background-color: #ffffff;
+}
+
+.progresso-etapas .etapa {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.progresso-etapas .etapa-ativa {
+    color: #b57327;
+    font-weight: bold;
+}
+
+.progresso-etapas .etapa-ativa::before,
+.progresso-etapas .etapa::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: inline-block;
+    margin-right: 8px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.progresso-etapas .etapa-ativa::before {
+    background-color: #b57327;
+    color: #fff;
+}
+
+/* Estilos dos itens do carrinho */
+.carrinho-itens {
+    margin-bottom: 20px;
 }
 
 .carrinho-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 15px 0;
     border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
-}
-
-.carrinho-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .carrinho-item img {
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
 }
 
 .detalhes-item {
-    flex: 1;
+    flex-grow: 1;
 }
 
 .detalhes-item h3 {
-    font-size: 1.2em;
-    margin: 0;
-    color: #333;
+    font-size: 16px;
     font-weight: 500;
+    margin: 0;
 }
 
 .detalhes-item p.preco {
-    font-size: 1.1em;
-    color: #28a745;
-    font-weight: bold;
+    font-size: 14px;
+    color: #b57327;
     margin: 5px 0;
 }
 
-/* Controle de Quantidade */
+/* Controles de quantidade */
 .controle-quantidade {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.controle-quantidade button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #eee;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.controle-quantidade input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Botão de remover item */
+.btn-remover {
+    font-size: 14px;
+    color: #b57327;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-remover:hover {
+    text-decoration: underline;
+}
+
+/* Resumo do carrinho */
+.resumo-carrinho {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.resumo-carrinho p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.resumo-carrinho h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Campo de cálculo de frete */
+.campo-cep {
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
-.controle-quantidade button {
-    background-color: #e1862b; 
-    color: white;
+.campo-cep input[type="text"] {
+    width: 150px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.campo-cep button {
+    background-color: #b57327;
+    color: #fff;
+    padding: 8px 15px;
     border: none;
-    padding: 5px 10px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1em;
+}
+
+.campo-cep button:hover {
+    background-color: #a36221;
+}
+
+/* Botões de ação */
+.btn-finalizar,
+.btn-continuar {
+    background-color: #b57327;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.controle-quantidade button:hover {
-    background-color: #e06b00; 
-}
-
-.controle-quantidade input {
-    width: 40px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin: 0 5px;
-    font-size: 1em;
-    padding: 4px;
-}
-
-.resumo-carrinho {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #ffffff;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.resumo-carrinho p, .resumo-carrinho h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-    color: #333;
-}
-
-.resumo-carrinho p {
-    font-size: 1em;
-}
-
-.resumo-carrinho h3 {
-    font-size: 1.5em;
-}
-
-.resumo-carrinho #subtotal,
-.resumo-carrinho #frete,
-.resumo-carrinho #total {
+    cursor: pointer;
+    font-size: 16px;
     font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn-finalizar:hover,
+.btn-continuar:hover {
+    background-color: #a36221;
 }
 
 .btn-finalizar {
-    background-color: #e1862b; 
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 6px;
-    width: 100%;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    float: right;
 }
 
-.btn-finalizar:hover {
-    background-color: #e06b00; 
-}
-
-@media (max-width: 768px) {
-    .carrinho-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .carrinho-item img {
-        width: 80px;
-        margin-bottom: 10px;
-    }
-
-    .controle-quantidade {
-        margin-top: 10px;
-    }
-
-    .resumo-carrinho {
-        padding: 15px;
-    }
-
-    .btn-finalizar {
-        font-size: 1em;
-    }
+.btn-continuar {
+    float: left;
+    background-color: #aaa;
 }

@@ -8,9 +8,10 @@
     <title>Carrinho - Boas Novas Papelaria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Matemasie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/carrinhocompras.css">
     <link rel="shortcut icon" href="img/logo-boasnovas.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 <div class="carrinho-container">
@@ -26,6 +27,7 @@
                     <input type="number" value="1" min="1" onchange="atualizarTotal()">
                     <button onclick="aumentarQuantidade(this)">+</button>
                 </div>
+                <button class="btn-remover" onclick="confirmarRemocao(this)">Remover</button>
             </div>
         </div>
 
@@ -39,6 +41,7 @@
                     <input type="number" value="1" min="1" onchange="atualizarTotal()">
                     <button onclick="aumentarQuantidade(this)">+</button>
                 </div>
+                <button class="btn-remover" onclick="confirmarRemocao(this)">Remover</button>
             </div>
         </div>
 
@@ -52,11 +55,12 @@
                     <input type="number" value="1" min="1" onchange="atualizarTotal()">
                     <button onclick="aumentarQuantidade(this)">+</button>
                 </div>
+                <button class="btn-remover" onclick="confirmarRemocao(this)">Remover</button>
             </div>
         </div>
 
         <div class="carrinho-item" data-preco="52.29">
-        <img src="./img/borracha.jpg" alt="Borracha">
+            <img src="./img/borracha.jpg" alt="Borracha">
             <div class="detalhes-item">
                 <h3>Borracha Branca Pequena com Cinta Plástica, Faber-Castell, Caixa com 24 Unidades</h3>
                 <p class="preco">R$ 52.29</p>
@@ -65,14 +69,15 @@
                     <input type="number" value="1" min="1" onchange="atualizarTotal()">
                     <button onclick="aumentarQuantidade(this)">+</button>
                 </div>
+                <button class="btn-remover" onclick="confirmarRemocao(this)">Remover</button>
             </div>
         </div>
     </div>
 
     <div class="resumo-carrinho">
-        <p>Subtotal: <span id="subtotal">R$ 0.00</span></p>
-        <p>Frete: <span id="frete">R$ 10.00</span></p>
-        <h3>Total: <span id="total">R$ 0.00</span></h3>
+        <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
+        <p>Frete: <span id="frete">R$ 10,00</span></p>
+        <h3>Total: <span id="total">R$ 0,00</span></h3>
         <button class="btn-finalizar">Continuar para o Pagamento</button>
     </div>
 </div>
@@ -105,12 +110,39 @@
             subtotal += preco * quantidade;
         });
 
-        // atualiza o subtotal e total no HTML
+        //atualiza subtotal e total 
         document.getElementById('subtotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
         const frete = 10.00;
         const total = subtotal + frete;
         document.getElementById('total').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
     }
+
+    //  remover item do carrinho c sweet
+    function confirmarRemocao(botao) {
+        Swal.fire({
+            title: 'Tem certeza?',
+            text: "Você realmente quer remover este item do carrinho?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const item = botao.closest('.carrinho-item');
+                item.remove();
+                atualizarTotal();
+                Swal.fire(
+                    'Removido!',
+                    'O item foi removido do seu carrinho.',
+                    'success'
+                );
+            }
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", atualizarTotal);
 </script>
 </body>
 </html>
