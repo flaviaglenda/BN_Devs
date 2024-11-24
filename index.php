@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="keywords" content="Papelaria BoasNovas Material Produtos">
-        <title>Contato - Boas Novas Papelaria</title>
+        <title>Início - Boas Novas Papelaria</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Matemasie&display=swap" rel="stylesheet">

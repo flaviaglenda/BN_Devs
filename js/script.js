@@ -53,14 +53,16 @@ if (registroForm) {
 
         if (form.method !== "post") return console.log("metodo errado");
 
-        if (!(form.email && form.senha && form.nome)) return console.log("precisa email senha e nome");
+        if (!(form.email && form.senha && form.nome && form.comf_senha)) return console.log("precisa email senha e nome");
         let nome = form.nome.value
         let email = form.email.value
         let senha = form.senha.value
+        let comf_senha = form.comf_senha.value;
 
         if (typeof nome !== "string") return console.log("nome string");
         if (typeof email !== "string") return console.log("email string");
         if (typeof senha !== "string") return console.log("senha string");
+        if (typeof comf_senha !== "string") return console.log("comf_senha string");
 
         if (nome.length > 150) return console.log("nome grande");
         if (nome.length < 2) return console.log("nome pequeno");
@@ -68,6 +70,8 @@ if (registroForm) {
         if (nome.length < 5) return console.log("email pequeno");
         if (email.length > 64) return console.log("senha grande");
         if (nome.length < 8) return console.log("senha pequeno");
+
+        if (senha !== comf_senha) return console.log("senha e comf_senha diferentes");
 
         form.submit();
     })
