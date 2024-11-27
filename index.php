@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BN DEVS</title>
+  <title>Papelaria Boas Novas</title>
   <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/home.css" />
   <script src="./assets/js/script.js"></script>
   <script src="./js/main.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io (1)/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1643,24 +1645,24 @@
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Lanna</a>
+            <a href="https://www.instagram.com/_lanna_kamilly_/?locale=zh_CN" target="blank" class="footer-nav-link">Lanna</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Flávia</a>
+            <a href="https://www.instagram.com/flaviaglendaa_?igsh=MTFvdnpmb25qZ2k3dQ==" target="blank" class="footer-nav-link">Flávia</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Miguel</a>
+            <a href="https://www.instagram.com/borgesm58?igsh=MWhiaDYzdzRjN2VjZw==" target="blank" class="footer-nav-link">Miguel</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Guilherme</a>
+            <a href="https://www.instagram.com/l1nn_l?igsh=eXBnd3NmZXV0MXZu" target="blank" class="footer-nav-link">Guilherme</a>
           </li>
          </ul>
          <ul class="footer-nav-list">
           <li class="footer-nav-item">
-            <h2 class="nav-title">Contact</h2>
+            <h2 class="nav-title">Contato</h2>
           </li>
 
           <li class="footer-nav-item flex">
