@@ -21,7 +21,7 @@
     <div class="header-main">
       <div class="container">
         <a href="#" class="header-logo">
-          <img src="./img/logo.png" alt="Anon's logo" width="90" height="45">
+          <img src="./img/logo.png" alt="BN DEVS" width="90" height="55">
         </a>
         <div class="header-search-container">
           <input type="search" name="search" class="search-field" placeholder="Procure aqui...">
