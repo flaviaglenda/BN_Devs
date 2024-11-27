@@ -1,79 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bn</title>
-
-  <!--
-    - favicon
-  -->
+  <title>BN DEVS</title>
   <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./css/home.css" />
-  
-  <!--
-    - google font link
-  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./js/main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-
   <div class="overlay" data-overlay></div>
-
-  <!--
-    - MODAL
-  -->
-
-
-
-
-  <!--
-    - NOTIFICATION TOAST
-  -->
-
-  
-
-
-
-
-
-  <!--
-    - HEADER
-  -->
-
   <header>
-
-   
     <div class="header-main">
-
       <div class="container">
-
         <a href="#" class="header-logo">
           <img src="./img/logo.png" alt="Anon's logo" width="90" height="45">
         </a>
-
         <div class="header-search-container">
-
           <input type="search" name="search" class="search-field" placeholder="Procure aqui...">
-
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
           </button>
 
         </div>
-
         <div class="header-user-actions">
         <a href="loginTeste.php">
           <button class="action-btn">
@@ -86,30 +42,21 @@
             <ion-icon name="bag-handle-outline"></ion-icon>
             <span class="count">0</span>
           </button>
-</a>
+          </a>
         </div>
-
       </div>
-
     </div>
-
     <nav class="desktop-navigation-menu">
-
       <div class="container">
-
         <ul class="desktop-menu-category-list">
-
           <li class="menu-category">
             <a href="#" class="menu-title">Início</a>
           </li>
 
           <li class="menu-category">
             <a href="#" class="menu-title">Categorias</a>
-
             <div class="dropdown-panel">
-
               <ul class="dropdown-panel-list">
-
                 <li class="menu-title">
                   <a href="#">Kids</a>
                 </li>
@@ -144,49 +91,38 @@
               </ul>
 
               <ul class="dropdown-panel-list">
-
                 <li class="menu-title">
                   <a href="#">Crianças</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Formal</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Casual</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Sports</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Jacket</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Sunglasses</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">
                     <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
                   </a>
                 </li>
-
               </ul>
 
               <ul class="dropdown-panel-list">
-
                 <li class="menu-title">
                   <a href="#">re</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Formal</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Casual</a>
                 </li>
@@ -212,7 +148,6 @@
               </ul>
 
               <ul class="dropdown-panel-list">
-
                 <li class="menu-title">
                   <a href="#">Electronics</a>
                 </li>
@@ -220,39 +155,29 @@
                 <li class="panel-list-item">
                   <a href="#">Smart Watch</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Smart TV</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Keyboard</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Mouse</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">Microphone</a>
                 </li>
-
                 <li class="panel-list-item">
                   <a href="#">
                     <img src="./assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
                   </a>
                 </li>
-
               </ul>
-
             </div>
           </li>
-
           <li class="menu-category">
             <a href="#" class="menu-title">Criança</a>
-
             <ul class="dropdown-list">
-
               <li class="dropdown-item">
                 <a href="#">Shirt</a>
               </li>
@@ -320,10 +245,7 @@
             </ul>
           </li>
 
-       
-
       </div>
-
     </nav>
 
     <div class="mobile-bottom-navigation">
@@ -398,9 +320,7 @@
             <li class="submenu-category">
               <a href="#" class="submenu-title">Wallet</a>
             </li>
-
           </ul>
-
         </li>
 
         <li class="menu-category">
@@ -497,9 +417,7 @@
             <li class="submenu-category">
               <a href="#" class="submenu-title">Air Freshener</a>
             </li>
-
           </ul>
-
         </li>
 
         <li class="menu-category">
@@ -513,19 +431,13 @@
       </ul>
 
       <div class="menu-bottom">
-
         <ul class="menu-category-list">
-
           <li class="menu-category">
-
             <button class="accordion-menu" data-accordion-btn>
               <p class="menu-title">Language</p>
-
               <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
             </button>
-
             <ul class="submenu-category-list" data-accordion>
-
               <li class="submenu-category">
                 <a href="#" class="submenu-title">English</a>
               </li>
@@ -537,11 +449,9 @@
               <li class="submenu-category">
                 <a href="#" class="submenu-title">Fren&ccedil;h</a>
               </li>
-
             </ul>
 
           </li>
-
           <li class="menu-category">
             <button class="accordion-menu" data-accordion-btn>
               <p class="menu-title">Currency</p>
@@ -558,11 +468,9 @@
               </li>
             </ul>
           </li>
-
         </ul>
 
         <ul class="menu-social-container">
-
           <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -586,77 +494,34 @@
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
         </ul>
-
       </div>
-
     </nav>
-
   </header>
 
-
-
-
-
-  <!--
-    - MAIN
-  -->
-
   <main>
-
-    <!--
-      - BANNER
-    -->
-
     <div class="banner">
-
       <div class="container">
-
         <div class="slider-container has-scrollbar">
-
           <div class="slider-item">
-
             <img src="./img/slide1.jpeg"  alt="women's latest fashion sale" class="banner-img">
-
           </div>
 
           <div class="slider-item">
-
             <img src="./img/slide2.jpeg"  alt="modern sunglasses" class="banner-img">
-
           </div>
 
           <div class="slider-item">
-
             <img src="./img/slide3.jpeg"  alt="new fashion summer sale" class="banner-img">
-
-         
-
           </div>
-
         </div>
-
       </div>
-
     </div>
 
-
-
-
-
-    <!--
-      - CATEGORY
-    -->
-
     <div class="category">
-
       <div class="container">
-
         <div class="category-item-container has-scrollbar">
-
           <div class="category-item">
-
             <div class="category-img-box">
               <img src="./img/brinq.jpeg" alt="dress & frock" width="30">
             </div>
@@ -668,33 +533,23 @@
 
              
               </div>
-
               <a href="#" class="category-btn">Clique aqui</a></a>
-
             </div>
-
           </div>
 
           <div class="category-item">
-
             <div class="category-img-box">
               <img src="./img/caderno.jpeg" alt="winter wear" width="30">
             </div>
-
             <div class="category-content-box">
             <a href="caderno.php">
               <div class="category-content-flex">
                 <h3 class="category-item-title">Cadernos</h3>
-
-              
               </div>
 
               <a href="#" class="category-btn">Clique aqui</a></a>
-
             </div>
-
           </div>
-
           <div class="category-item">
 
             <div class="category-img-box">
@@ -706,17 +561,12 @@
               <div class="category-content-flex">
                 <h3 class="category-item-title">Estojo</h3>
 
-            
               </div>
-
               <a href="#" class="category-btn">Clique aqui</a></a>
 
             </div>
-
           </div>
-
           <div class="category-item">
-
             <div class="category-img-box">
               <img src="./img/balao.jpeg" alt="shorts & jeans" width="30">
             </div>
@@ -729,9 +579,7 @@
               </div>
 
               <a href="#" class="category-btn">Clique aqui</a></a>
-
             </div>
-
           </div>
 
           <div class="category-item">
@@ -819,21 +667,9 @@
     </div>
 
 
-
-
-
-    <!--
-      - PRODUCT
-    -->
-
     <div class="product-container">
 
       <div class="container">
-
-
-        <!--
-          - SIDEBAR
-        -->
 
         <div class="sidebar  has-scrollbar" data-mobile-menu>
 
@@ -846,7 +682,7 @@
                 <ion-icon name="close-outline"></ion-icon>
               </button>
             </div>
-<!-- CATEGORIASS -->
+
             <ul class="sidebar-menu-category-list">
 
               <li class="sidebar-menu-category">
@@ -998,8 +834,6 @@
 
               </li>
 
-            
-
               <li class="sidebar-menu-category">
 
                 <button class="sidebar-accordion-menu" data-accordion-btn>
@@ -1146,86 +980,36 @@
           </div>
 <!-- sobre a loja... -->
           <div class="product-showcase">
-
             <h3 class="showcase-heading">ㅤ</h3>
-
             <div class="showcase-wrapper">
-
               <div class="showcase-container">
-
                 <div class="showcase">
-
-                
-
                   <div class="showcase-content">
-
                     <a href="#">
                       <h4 class="showcase-title">ㅤ</h4>
                     </a>
-
-                 
-
-                  </div>
-
-                </div>
-
-                <div class="showcase">
-
-                
+                   </div>
+                   </div>
+               <div class="showcase">
                   <div class="showcase-content">
-
-                   
-
                   </div>
-
                 </div>
-
                 <div class="showcase">
-
-               
-                  <div class="showcase-content">
-
-                  
-
+                 <div class="showcase-content">
                   </div>
-
                 </div>
-
                 <div class="showcase">
-
-                
-
                   <div class="showcase-content">
-
-                    
-                    
-
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
 
-
-
         <div class="product-box">
-
-          <!--
-            - PRODUCT MINIMAL
-          -->
-
           <div class="product-minimal">
-
             <div class="product-showcase">
-
-
-
 
             <!-- produtos -->
               <h2 class="title">Novidades</h2>
@@ -1839,42 +1623,16 @@
                       <div class="price-box">
                         <p class="price">$20.00</p>
                         <del>$30.00</del>
-                      </div>
-            
-                    </div>
-            
-                  </div>
-            
-                </div>
-            
+                      </div>           
+                    </div>            
+                  </div>            
+                </div>           
               </div>
-            
             </div>
-
           </div>
-
-
-
-    
   </main>
-
-
-
-
-
-  <!--
-    - FOOTER
-  -->
-
   <footer>
-
-  
-      
-
-      
-
-
-    <div class="footer-nav">
+ <div class="footer-nav">
 
       <div class="container">
 
@@ -1899,15 +1657,8 @@
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Guilherme</a>
           </li>
-
-       
-        </ul>
-
-       
-      
-
-        <ul class="footer-nav-list">
-
+         </ul>
+         <ul class="footer-nav-list">
           <li class="footer-nav-item">
             <h2 class="nav-title">Contact</h2>
           </li>
@@ -1972,49 +1723,21 @@
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
-
             </ul>
           </li>
-
         </ul>
-
       </div>
-
     </div>
 
     <div class="footer-bottom">
 
       <div class="container">
-
-      
-
         <p class="copyright">
           BN DEVS &copy; <a href="#">2024</a> EMPRESA.
         </p>
-
       </div>
 
     </div>
-
   </footer>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script src="./js/main.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
