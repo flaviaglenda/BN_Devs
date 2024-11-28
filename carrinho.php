@@ -10,11 +10,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/carrinhocompras.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="./assets/js/script.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home.css" />
     <link rel="shortcut icon" href="img/logo-boasnovas.png" type="image/x-icon">
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+    
+  <header>
+<div class="header-main">
+  <div class="container">
+    <a href="index.php" class="header-logo">
+      <img src="./img/logo.png" alt="BN DEVS" width="90" height="55">
+    </a>
+
+    <div class="header-search-container">
+      <input type="search" name="search" class="search-field" placeholder="Procure aqui...">
+      <button class="search-btn">
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <div class="header-user-actions">
+    <a href="loginTeste.php">
+      <button class="action-btn">
+        <ion-icon name="person-outline"></ion-icon>
+      </button>
+      </a>
+  
+      <a href="carrinho.php">
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+</a>
+    </div>
+
+  </div>
+
+</div>
 <div class="carrinho-container">
     <h2>Carrinho de Compras</h2>
     <div class="carrinho-itens">
