@@ -43,7 +43,7 @@
           <a href="carrinho.php">
           <button class="action-btn">
             <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
+  
           </button>
           </a>
         </div>
@@ -536,7 +536,7 @@
 
              
               </div>
-              <a href="#" class="category-btn">Clique aqui</a></a>
+              <a href="paginabrinquedo.php" class="category-btn">Clique aqui</a></a>
             </div>
           </div>
 
@@ -550,7 +550,7 @@
                 <h3 class="category-item-title">Cadernos</h3>
               </div>
 
-              <a href="#" class="category-btn">Clique aqui</a></a>
+              <a href="paginacaderno.php" class="category-btn">Clique aqui</a></a>
             </div>
           </div>
           <div class="category-item">
@@ -560,12 +560,11 @@
             </div>
 
             <div class="category-content-box">
-            <a href="estojo.php">
               <div class="category-content-flex">
                 <h3 class="category-item-title">Estojo</h3>
 
               </div>
-              <a href="#" class="category-btn">Clique aqui</a></a>
+              <a href="paginaestojo.php" class="category-btn">Clique aqui</a></a>
 
             </div>
           </div>
@@ -581,7 +580,7 @@
 
               </div>
 
-              <a href="#" class="category-btn">Clique aqui</a></a>
+              <a href="paginadecoracao.php" class="category-btn">Clique aqui</a></a>
             </div>
           </div>
 
@@ -599,7 +598,7 @@
               
               </div>
 
-              <a href="#" class="category-btn">Clique aqui</a></a>
+              <a href="paginapintura.php" class="category-btn">Clique aqui</a></a>
 
             </div>
 
@@ -619,7 +618,7 @@
              
               </div>
 
-              <a href="#" class="category-btn">Clique aqui</a></a>
+              <a href="paginamochila.php" class="category-btn">Clique aqui</a></a>
 
             </div>
 
@@ -639,7 +638,7 @@
               
               </div>
 
-              <a href="#" class="category-btn">Clique aqui</a></a>
+              <a href="paginaacessorios.php" class="category-btn">Clique aqui</a></a>
 
             </div>
 
@@ -657,7 +656,7 @@
                 <h3 class="category-item-title">canetas</h3>
               </div>
 
-              <a href="#" class="category-btn">Clique aqui</a>
+              <a href="paginacanetas.php" class="category-btn">Clique aqui</a>
               </a>
             </div>
 
