@@ -6,10 +6,6 @@ function navigateTo(destination) {
     }
 }
 
-function writeIn(elementId, text) {
-    document.getElementById(elementId).innerHTML = text;
-}
-
 (function alerta(alertClass) {
     let elements = document.getElementsByClassName(alertClass)
     
@@ -76,5 +72,3 @@ if (registroForm) {
         form.submit();
     })
 }
-
-// Pensar em meios para implementar modo claro e escuro.

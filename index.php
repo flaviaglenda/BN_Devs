@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/home.css" />
   <script src="./assets/js/script.js"></script>
   <script src="./js/main.js"></script>
+  <?php include './html/head.php' ?>
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io (1)/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

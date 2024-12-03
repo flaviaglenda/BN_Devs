@@ -2491,9 +2491,9 @@ footer {
  * responsive larger than 1200px screen
  */
 
-@media (min-width: 1200px)
+@media (min-width: 1200px) 
 
-  /**
+  {/**
    * #REUSED STYLE 
    */
 
@@ -2580,3 +2580,4 @@ footer {
   /**
    * #FOOTER
    */
+}
