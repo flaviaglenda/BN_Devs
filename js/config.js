@@ -237,6 +237,15 @@ async function swalPurchase(json)  {
     }
 }
 
+async function swalProduct(json) {
+    Swal.fire({
+        icon: 'info',
+        title: 'Informações do Produto',
+        html: `<b>Nome:</b> ${json.product.nome}<br><b>Descrição:</b> ${json.product.descricao}<br><b>Preço:</b> R$${json.product.preco.toFixed(2)}`,
+        footer: `ID do produto: ${json.product.id}`
+    });
+}
+
 async function swalEditPerfil(json) {
     let changes = json.edited.changes;
     changes = Object.entries(changes).map(([key, value]) => `<b>${key}:</b> ${value}`).join('<br>');
@@ -267,6 +276,26 @@ async function swalAddProdutoCart(json) {
     });
 }
 
+async function swalEditProduct(json) {
+    let changes = json.edited.changes;
+    changes = Object.entries(changes).map(([key, value]) => `<b>${key}:</b> ${value}`).join('<br>');
+    Swal.fire({
+        icon: 'success',
+        title: 'Produto atualizado!',
+        html: `Informações alteradas:<br>${changes}`,
+        footer: `ID do produto: ${json.edited.id}`
+    })
+}
+
+async function swalPerfil(json) {
+    Swal.fire({
+        icon: 'info',
+        title: 'Informações do Perfil',
+        html: `<b>Nome:</b> ${json.user.nome}<br><b>Email:</b> ${json.user.email}<br><b>Nível:</b> ${json.user.nivel}`,
+        footer: `ID do usuário: ${json.user.id}`
+    });
+}
+
 // ----
 
 function logout(redirect, ...params) {
@@ -285,11 +314,13 @@ function productCheck(id, ...params) {
     serverRequests.product(id).then(swalResponse(swalProduct, ...params));
 }
 
-function addProduto(id_usuario, id_produto, qnt, ...params) {
+function addProductCart(id_usuario, id_produto, qnt, ...params) {
     serverRequests.cart(id_usuario, 'add', { produto: id_produto, qnt: qnt }).then(swalResponse(swalAddProdutoCart, ...params));
 }
 
-function perfil(id, ...params) {}
+function perfil(id, ...params) {
+    serverRequests.perfil(id).then(swalResponse(swalPerfil, ...params));
+}
 
 function editPerfil(id, editing = {}, ...params) {
     if (typeof id !== "undefined") editing['id'] = id;
@@ -309,6 +340,11 @@ function deletePerfil(id, ...params) {
             serverRequests.crud_usuarios('delete', {id: id}).then(swalResponse(swalDeletePerfil, ...params));
         }
     })
+}
+
+function editProduct(id, editing = {}, ...params) {
+    if (typeof id !== "undefined") editing['id'] = id;
+    serverRequests.crud_produtos('update', {...editing}).then(swalResponse(swalEditProduct, ...params));
 }
 
 // -----
@@ -355,4 +391,68 @@ async function processPayment(id_usuario, method, descricao) {
         });
         return;
     }
+}
+
+async function editarPerfilPopup(id_usuario) {
+    const width = 500;
+    const height = 800;
+
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+
+    const userjson = await serverRequests.perfil(id_usuario);
+
+    if (userjson.status === "error") {
+        swalErrorJson(userjson);
+        return;
+    }
+
+    const popup = window.open('editar_usuario.php', '_blank', `width=${width},height=${height},top=${top},left=${left}`);
+    popup.addEventListener('load', () => {
+        popup.edittingUser = userjson.user;
+
+        const form = popup.document.getElementById('form-editar');
+        Object.entries(userjson.user).forEach(([key, value]) => {
+            if (form[key]) {
+                form[key].value = value;
+            }
+        });
+    });
+}
+
+async function editarProdutoPopup(id_produto) {
+    const width = 500;
+    const height = 800;
+
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+
+    const productjson = await serverRequests.product(id_produto);
+
+    if (productjson.status === "error") {
+        swalErrorJson(productjson);
+        return;
+    }
+
+    const popup = window.open('editar_produto.php', '_blank', `width=${width},height=${height},top=${top},left=${left}`);
+    popup.addEventListener('load', () => {
+        popup.edittingProduct = productjson.product;
+
+        const form = popup.document.getElementById('form-editar');
+        Object.entries(productjson.product).forEach(([key, value]) => {
+            if (form[key]) {
+                form[key].value = `${value}`;
+            }
+        });
+    });
+}
+
+async function adminTools() {
+    const width = 500;
+    const height = 800;
+
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+
+    window.open('admin_tools.php', '_blank', `width=${width},height=${height},top=${top},left=${left}`);
 }

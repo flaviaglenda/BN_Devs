@@ -115,12 +115,12 @@ switch ($_POST['action']) {
             }
         }
 
-        if (isset($_POST['cpf'])) {
-            $cpf = $_POST['cpf'];
-            if ($cpf === "") {
-                array_push($empty_params, 'cpf');
+        if (isset($_POST['cep'])) {
+            $cep = $_POST['cep'];
+            if ($cep === "") {
+                array_push($empty_params, 'cep');
             } else {
-                $editing_params['cpf'] = $cpf;
+                $editing_params['cep'] = $cep;
                 array_push($param_types, 's');
             }
         }
@@ -194,6 +194,10 @@ switch ($_POST['action']) {
         if (isset($editing_params['senha'])) {
             $senha_alterada = true;
             unset($editing_params['senha']);
+        }
+
+        foreach ($editing_params as $key => $value) {
+            $_SESSION[$key] = $value;
         }
 
         echo crud_json('update', [

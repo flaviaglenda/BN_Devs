@@ -12,6 +12,7 @@ if (isset($_GET['id']) || isset($_SESSION['id'])) {
     if (isset($_GET['id'])) {
         if (!checkLevelInSession(2)) {
             echo error_json(4, 'Permissão insuficiente.');
+            exit();
         } else {
             $id = $_GET['id'];
         }

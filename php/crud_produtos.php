@@ -213,7 +213,7 @@ switch ($_POST['action']) {
         }
 
         echo crud_json('update', [
-            ...$editing_params, 'id' => $id
+            'changes' => $editing_params, 'id' => $id
         ], 'edited');
         exit();
 
