@@ -56,195 +56,42 @@
             <a href="#" class="menu-title">Início</a>
           </li>
 
+        
+
+          <li class="">
+           
+
+          </li>
+
           <li class="menu-category">
             <a href="#" class="menu-title">Categorias</a>
-            <div class="dropdown-panel">
-              <ul class="dropdown-panel-list">
-                <li class="menu-title">
-                  <a href="#">Kids</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Eletronicas</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Laptop</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Camera</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Tablet</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Headphone</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">
-                    <img src="./assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
-                      height="119">
-                  </a>
-                </li>
-
-              </ul>
-
-              <ul class="dropdown-panel-list">
-                <li class="menu-title">
-                  <a href="#">Crianças</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Formal</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Casual</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Sports</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Jacket</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Sunglasses</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">
-                    <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
-                  </a>
-                </li>
-              </ul>
-
-              <ul class="dropdown-panel-list">
-                <li class="menu-title">
-                  <a href="#">re</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Formal</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Casual</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Perfume</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Cosmetics</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Bags</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">
-                    <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
-                  </a>
-                </li>
-
-              </ul>
-
-              <ul class="dropdown-panel-list">
-                <li class="menu-title">
-                  <a href="#">Electronics</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="#">Smart Watch</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Smart TV</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Keyboard</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Mouse</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">Microphone</a>
-                </li>
-                <li class="panel-list-item">
-                  <a href="#">
-                    <img src="./assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="menu-category">
-            <a href="#" class="menu-title">Criança</a>
-            <ul class="dropdown-list">
-              <li class="dropdown-item">
-                <a href="#">Shirt</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Shorts & Jeans</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Safety Shoes</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="#">Wallet</a>
-              </li>
-
-            </ul>
-          </li>
-
-          <li class="menu-category">
-            <a href="#" class="menu-title">Eletronicos</a>
 
             <ul class="dropdown-list">
 
               <li class="dropdown-item">
-                <a href="#">Dress & Frock</a>
+                <a href="paginacaderno.php">Caderno</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Earrings</a>
+                <a href="paginapintura.php">Pintura</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Necklace</a>
+                <a href="paginamochila.php">Mochila</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Makeup Kit</a>
+                <a href="paginaacessorios.php">Acessórios</a>
               </li>
-
-            </ul>
-          </li>
-
-          <li class="menu-category">
-            <a href="#" class="menu-title">Materiais</a>
-
-            <ul class="dropdown-list">
-
               <li class="dropdown-item">
-                <a href="#">Earrings</a>
+                <a href="paginabrinquedo.php">Brinquedos</a>
               </li>
-
               <li class="dropdown-item">
-                <a href="#">Couple Rings</a>
+                <a href="paginacanetas.php">Canetas</a>
               </li>
-
               <li class="dropdown-item">
-                <a href="#">Necklace</a>
+                <a href="paginaestojo.php">Estojo</a>
               </li>
-
-              <li class="dropdown-item">
-                <a href="#">Bracelets</a>
-              </li>
-
             </ul>
           </li>
 
@@ -678,10 +525,10 @@
           <div class="sidebar-category">
 
             <div class="sidebar-top">
-              <h2 class="sidebar-title">Categoria</h2>
+              <h2 class="sidebar-title">Marcas</h2>
 
               <button class="sidebar-close-btn" data-mobile-menu-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
+              
               </button>
             </div>
 
@@ -692,15 +539,14 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/dress.svg" alt="clothes" width="20" height="20"
+                  <img src="./img/cis.webp" alt="clothes" width="35" height="30"
                       class="menu-title-img">
 
-                    <p class="menu-title">Eletronicos</p>
+                    <p class="menu-title">Cis</p>
                   </div>
 
                   <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    
                   </div>
 
                 </button>
@@ -723,7 +569,7 @@
 
                   <li class="sidebar-submenu-category">
                     <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Material Escolar</p>
+                      <p class="product-name">TodoLivro</p>
                       <data value="50" class="stock" title="Available Stock">50</data>
                     </a>
                   </li>
@@ -744,15 +590,14 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/shoes.svg" alt="footwear" class="menu-title-img" width="20"
-                      height="20">
+                  <img src="./img/todol.png" alt="footwear" class="menu-title-img" width="35"
+                      height="35">
 
-                    <p class="menu-title">Material Escolar</p>
+                    <p class="menu-title">TodoLivro</p>
                   </div>
 
                   <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    
                   </div>
 
                 </button>
@@ -796,15 +641,14 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/jewelry.svg" alt="clothes" class="menu-title-img" width="20"
-                      height="20">
+                  <img src="./img/castel.png" alt="clothes" class="menu-title-img" width="40"
+                      height="45">
 
-                    <p class="menu-title">Kids</p>
+                    <p class="menu-title">Faber Castell</p>
                   </div>
 
                   <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  
                   </div>
 
                 </button>
@@ -841,15 +685,14 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/cosmetics.svg" alt="cosmetics" class="menu-title-img" width="20"
-                      height="20">
+                  <img src="./img/acril.jpg" alt="cosmetics" class="menu-title-img" width="40"
+                      height="50">
 
-                    <p class="menu-title">Decoração</p>
+                    <p class="menu-title">Acrilex</p>
                   </div>
 
                   <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                   
                   </div>
 
                 </button>
@@ -893,15 +736,14 @@
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
                   <div class="menu-title-flex">
-                    <img src="./assets/images/icons/glasses.svg" alt="glasses" class="menu-title-img" width="20"
-                      height="20">
+                  <img src="./img/dac.png" alt="glasses" class="menu-title-img" width="40"
+                      height="40">
 
-                    <p class="menu-title">Estojo</p>
+                    <p class="menu-title">Dac</p>
                   </div>
 
                   <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                   
                   </div>
 
                 </button>
@@ -930,51 +772,7 @@
 
                 <button class="sidebar-accordion-menu" data-accordion-btn>
 
-                  <div class="menu-title-flex">
-                    <img src="./assets/images/icons/bag.svg" alt="bags" class="menu-title-img" width="20" height="20">
-
-                    <p class="menu-title">Bags</p>
-                  </div>
-
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
-
-                </button>
-
-                <ul class="sidebar-submenu-category-list" data-accordion>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Shopping Bag</p>
-                      <data value="62" class="stock" title="Available Stock">62</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Gym Backpack</p>
-                      <data value="35" class="stock" title="Available Stock">35</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Purse</p>
-                      <data value="80" class="stock" title="Available Stock">80</data>
-                    </a>
-                  </li>
-
-                  <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
-                      <p class="product-name">Wallet</p>
-                      <data value="75" class="stock" title="Available Stock">75</data>
-                    </a>
-                  </li>
-
-                </ul>
-
+                  
               </li>
 
             </ul>
@@ -1121,21 +919,21 @@
                   <div class="showcase">
                 
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jacket-5.jpg" alt="men yarn fleece full-zip jacket" class="showcase-img"
-                        width="70">
+                   
+
                     </a>
                 
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</h4>
+                        <h4 class="showcase-title">ㅤ</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Winter wear</a>
+                      <a href="#" class="showcase-category">ㅤ</a>
                 
                       <div class="price-box">
-                        <p class="price">$61.00</p>
-                        <del>$11.00</del>
+                        <p class="price">ㅤ</p>
+                        <del>ㅤ</del>
                       </div>
                 
                     </div>
@@ -1145,21 +943,44 @@
                   <div class="showcase">
                 
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jacket-1.jpg" alt="mens winter leathers jackets" class="showcase-img"
-                        width="70">
+                    
+                   
                     </a>
                 
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">Mens Winter Leathers Jackets</h4>
+                        <h4 class="showcase-title">ㅤ</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Winter wear</a>
+                      <a href="#" class="showcase-category">ㅤ</a>
                 
                       <div class="price-box">
-                        <p class="price">$32.00</p>
-                        <del>$20.00</del>
+                        <p class="price">ㅤ</p>
+                        <del>ㅤ</del>
+                      </div>
+                
+                    </div>
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                   
+                   
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">ㅤ</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">ㅤ</a>
+                
+                      <div class="price-box">
+                        <p class="price">ㅤ</p>
+                        <del>ㅤ</del>
                       </div>
                 
                     </div>
@@ -1169,45 +990,20 @@
                   <div class="showcase">
                 
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jacket-3.jpg" alt="mens winter leathers jackets" class="showcase-img"
-                        width="70">
+                 
                     </a>
                 
                     <div class="showcase-content">
                 
                       <a href="#">
-                        <h4 class="showcase-title">Mens Winter Leathers Jackets</h4>
+                        <h4 class="showcase-title">ㅤ</h4>
                       </a>
                 
-                      <a href="#" class="showcase-category">Jackets</a>
+                      <a href="#" class="showcase-category">ㅤ</a>
                 
                       <div class="price-box">
-                        <p class="price">$50.00</p>
-                        <del>$25.00</del>
-                      </div>
-                
-                    </div>
-                
-                  </div>
-                
-                  <div class="showcase">
-                
-                    <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/shorts-1.jpg" alt="better basics french terry sweatshorts" class="showcase-img"
-                        width="70">
-                    </a>
-                
-                    <div class="showcase-content">
-                
-                      <a href="#">
-                        <h4 class="showcase-title">Better Basics French Terry Sweatshorts</h4>
-                      </a>
-                
-                      <a href="#" class="showcase-category">Shorts</a>
-                
-                      <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$10.00</del>
+                        <p class="price">ㅤ</p>
+                        <del>ㅤ</del>
                       </div>
                 
                     </div>
@@ -1326,106 +1122,107 @@
             
                 </div>
             
+                
                 <div class="showcase-container">
-            
+                
                   <div class="showcase">
-            
+                
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/sports-6.jpg" alt="air tekking shoes - white" class="showcase-img"
-                        width="70">
+                   
+
                     </a>
-            
+                
                     <div class="showcase-content">
-            
+                
                       <a href="#">
-                        <h4 class="showcase-title">Air Trekking Shoes - white</h4>
+                        <h4 class="showcase-title">ㅤ</h4>
                       </a>
-            
-                      <a href="#" class="showcase-category">Sports</a>
-            
+                
+                      <a href="#" class="showcase-category">ㅤ</a>
+                
                       <div class="price-box">
-                        <p class="price">$52.00</p>
-                        <del>$55.00</del>
+                        <p class="price">ㅤ</p>
+                        <del>ㅤ</del>
                       </div>
-            
+                
                     </div>
-            
+                
                   </div>
-            
+                
                   <div class="showcase">
-            
+                
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/shoe-3.jpg" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    
+                   
                     </a>
-            
+                
                     <div class="showcase-content">
-            
+                
                       <a href="#">
-                        <h4 class="showcase-title">Boot With Suede Detail</h4>
+                        <h4 class="showcase-title">ㅤ</h4>
                       </a>
-            
-                      <a href="#" class="showcase-category">boots</a>
-            
+                
+                      <a href="#" class="showcase-category">ㅤ</a>
+                
                       <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
+                        <p class="price">ㅤ</p>
+                        <del>ㅤ</del>
                       </div>
-            
+                
                     </div>
-            
                   </div>
-            
+                
                   <div class="showcase">
-            
+                
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/shoe-1.jpg" alt="men's leather formal wear shoes" class="showcase-img"
-                        width="70">
+                   
+                   
                     </a>
-            
+                
                     <div class="showcase-content">
-            
+                
                       <a href="#">
-                        <h4 class="showcase-title">Men's Leather Formal Wear shoes</h4>
+                        <h4 class="showcase-title">ㅤ</h4>
                       </a>
-            
-                      <a href="#" class="showcase-category">formal</a>
-            
+                
+                      <a href="#" class="showcase-category">ㅤ</a>
+                
                       <div class="price-box">
-                        <p class="price">$56.00</p>
-                        <del>$78.00</del>
+                        <p class="price">ㅤ</p>
+                        <del>ㅤ</del>
                       </div>
-            
+                
                     </div>
-            
+                
                   </div>
-            
+                
                   <div class="showcase">
-            
+                
                     <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/shoe-2.jpg" alt="casual men's brown shoes" class="showcase-img" width="70">
+                 
                     </a>
-            
+                
                     <div class="showcase-content">
-            
+                
                       <a href="#">
-                        <h4 class="showcase-title">Casual Men's Brown shoes</h4>
+                        <h4 class="showcase-title">ㅤ</h4>
                       </a>
-            
-                      <a href="#" class="showcase-category">Casual</a>
-            
+                
+                      <a href="#" class="showcase-category">ㅤ</a>
+                
                       <div class="price-box">
-                        <p class="price">$50.00</p>
-                        <del>$55.00</del>
+                        <p class="price">ㅤ</p>
+                        <del>ㅤ</del>
                       </div>
-            
+                
                     </div>
-            
+                
                   </div>
-            
+                
                 </div>
-            
+
               </div>
-            
+
             </div>
 
             <div class="product-showcase">
@@ -1453,7 +1250,7 @@
             
                       <div class="price-box">
                         <p class="price">$50.00</p>
-                        <del>$34.00</del>
+                        <del>$60.00</del>
                       </div>
             
                     </div>
@@ -1477,7 +1274,7 @@
             
                       <div class="price-box">
                         <p class="price">$84.00</p>
-                        <del>$30.00</del>
+                        <del>$90,00</del>
                       </div>
             
                     </div>
@@ -1494,13 +1291,13 @@
                     <div class="showcase-content">
             
                       <a href="#">
-                        <h4 class="showcase-title">Caneca Mosquetão</h4>
+                        <h4 class="showcase-title">apontador Metal Cis</h4>
                       </a>
             
                       <a href="#" class="showcase-category">Preço</a>
             
                       <div class="price-box">
-                        <p class="price">$42.00</p>
+                        <p class="price">$8,90</p>
                         <del>$10.00</del>
                       </div>
             
@@ -1525,7 +1322,7 @@
             
                       <div class="price-box">
                         <p class="price">$24.00</p>
-                        <del>$10.00</del>
+                        <del>$30.00</del>
                       </div>
             
                     </div>
@@ -1533,104 +1330,108 @@
                   </div>
             
                 </div>
-            
                 <div class="showcase-container">
-            
-                  <div class="showcase">
-            
-                    <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jewellery-2.jpg" alt="platinum zircon classic ring" class="showcase-img"
-                        width="70">
+                
+                <div class="showcase">
+              
+                  <a href="#" class="showcase-img-box">
+                 
+
+                  </a>
+              
+                  <div class="showcase-content">
+              
+                    <a href="#">
+                      <h4 class="showcase-title">ㅤ</h4>
                     </a>
-            
-                    <div class="showcase-content">
-            
-                      <a href="#">
-                        <h4 class="showcase-title">platinum Zircon Classic Ring</h4>
-                      </a>
-            
-                      <a href="#" class="showcase-category">jewellery</a>
-            
-                      <div class="price-box">
-                        <p class="price">$62.00</p>
-                        <del>$65.00</del>
-                      </div>
-            
+              
+                    <a href="#" class="showcase-category">ㅤ</a>
+              
+                    <div class="price-box">
+                      <p class="price">ㅤ</p>
+                      <del>ㅤ</del>
                     </div>
-            
+              
                   </div>
-            
-                  <div class="showcase">
-            
-                    <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/watch-1.jpg" alt="smart watche vital plus" class="showcase-img" width="70">
+              
+                </div>
+              
+                <div class="showcase">
+              
+                  <a href="#" class="showcase-img-box">
+                  
+                 
+                  </a>
+              
+                  <div class="showcase-content">
+              
+                    <a href="#">
+                      <h4 class="showcase-title">ㅤ</h4>
                     </a>
-            
-                    <div class="showcase-content">
-            
-                      <a href="#">
-                        <h4 class="showcase-title">Smart watche Vital Plus</h4>
-                      </a>
-            
-                      <a href="#" class="showcase-category">Watches</a>
-            
-                      <div class="price-box">
-                        <p class="price">$56.00</p>
-                        <del>$78.00</del>
-                      </div>
-            
+              
+                    <a href="#" class="showcase-category">ㅤ</a>
+              
+                    <div class="price-box">
+                      <p class="price">ㅤ</p>
+                      <del>ㅤ</del>
                     </div>
-            
+              
                   </div>
-            
-                  <div class="showcase">
-            
-                    <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/shampoo.jpg" alt="shampoo conditioner packs" class="showcase-img"
-                        width="70">
+                </div>
+              
+                <div class="showcase">
+              
+                  <a href="#" class="showcase-img-box">
+                 
+                 
+                  </a>
+              
+                  <div class="showcase-content">
+              
+                    <a href="#">
+                      <h4 class="showcase-title">ㅤ</h4>
                     </a>
-            
-                    <div class="showcase-content">
-            
-                      <a href="#">
-                        <h4 class="showcase-title">shampoo conditioner packs</h4>
-                      </a>
-            
-                      <a href="#" class="showcase-category">cosmetics</a>
-            
-                      <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
-                      </div>
-            
+              
+                    <a href="#" class="showcase-category">ㅤ</a>
+              
+                    <div class="price-box">
+                      <p class="price">ㅤ</p>
+                      <del>ㅤ</del>
                     </div>
-            
+              
                   </div>
-            
-                  <div class="showcase">
-            
-                    <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/jewellery-1.jpg" alt="rose gold peacock earrings" class="showcase-img"
-                        width="70">
+              
+                </div>
+              
+                <div class="showcase">
+              
+                  <a href="#" class="showcase-img-box">
+               
+                  </a>
+              
+                  <div class="showcase-content">
+              
+                    <a href="#">
+                      <h4 class="showcase-title">ㅤ</h4>
                     </a>
-            
-                    <div class="showcase-content">
-            
-                      <a href="#">
-                        <h4 class="showcase-title">Rose Gold Peacock Earrings</h4>
-                      </a>
-            
-                      <a href="#" class="showcase-category">jewellery</a>
-            
-                      <div class="price-box">
-                        <p class="price">$20.00</p>
-                        <del>$30.00</del>
-                      </div>           
-                    </div>            
-                  </div>            
-                </div>           
+              
+                    <a href="#" class="showcase-category">ㅤ</a>
+              
+                    <div class="price-box">
+                      <p class="price">ㅤ</p>
+                      <del>ㅤ</del>
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
               </div>
+
             </div>
+
+          </div>
+             
           </div>
   </main>
   <footer>
