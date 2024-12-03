@@ -34,7 +34,7 @@
 
         </div>
         <div class="header-user-actions">
-        <a href="loginTeste.php">
+        <a href="login.php">
           <button class="action-btn">
             <ion-icon name="person-outline"></ion-icon>
           </button>

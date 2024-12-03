@@ -159,6 +159,18 @@ serverRequests.logout = async function logout(redirect = true) {
     return resp;
 }
 
+serverRequests.levelAllowed = async function levelAllowed(required) {
+    required = Number(required);
+    if (isNaN(required)) required = 2;
+
+    let get = new getStr();
+
+    get.assign({required: required});
+
+    return await fetch(`${project_dir}php/level_check.php?${get}`)
+        .then(resp => resp.json());
+}
+
 // ---
 
 function swalResponse(swalSpecificFunction, ...params) {
@@ -388,6 +400,8 @@ async function processPayment(id_usuario, method, descricao) {
             icon: 'success',
             title: 'Pagamento efetuado com sucesso!',
             text: `Forma de pagamento: ${method}`
+        }).then(() => {
+            window.location.href='./';
         });
         return;
     }
@@ -434,6 +448,17 @@ async function editarProdutoPopup(id_produto) {
         return;
     }
 
+    const allowed = await serverRequests.levelAllowed(2);
+
+    if (!allowed) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Permissão negada.',
+            text: 'Você não tem permissão para editar produtos.'
+        });
+        return;
+    }
+
     const popup = window.open('editar_produto.php', '_blank', `width=${width},height=${height},top=${top},left=${left}`);
     popup.addEventListener('load', () => {
         popup.edittingProduct = productjson.product;
@@ -445,6 +470,16 @@ async function editarProdutoPopup(id_produto) {
             }
         });
     });
+}
+
+async function adminProdutos() {
+    const width = 800;
+    const height = 800;
+
+    const left = (screen.width / 2) - (width / 2);
+    const top = (screen.height / 2) - (height / 2);
+
+    window.open('admin_produtos.php', '_blank', `width=${width},height=${height},top=${top},left=${left}`);
 }
 
 async function adminTools() {

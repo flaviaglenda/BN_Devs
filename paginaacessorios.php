@@ -16,6 +16,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
    <script src="./js/produtos.js" defer></script>
    <title>Decorações</title>
+    <?php include './html/head.php' ?>
 </head>
 <body>
 <header>
@@ -32,7 +33,7 @@
 
         </div>
         <div class="header-user-actions">
-        <a href="loginTeste.php">
+        <a href="login.php">
           <button class="action-btn">
             <ion-icon name="person-outline"></ion-icon>
           </button>

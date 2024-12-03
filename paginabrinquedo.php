@@ -16,7 +16,8 @@
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
    <script src="./js/produtos.js" defer></script>
    <title>Brinquedos</title>
-</head>
+    <?php include './html/head.php' ?>
+    </head>
 <body>
 <header>
     <div class="header-main">
@@ -32,7 +33,7 @@
 
         </div>
         <div class="header-user-actions">
-        <a href="loginTeste.php">
+        <a href="login.php">
           <button class="action-btn">
             <ion-icon name="person-outline"></ion-icon>
           </button>
@@ -121,7 +122,7 @@ Resistente</p>
             <p>Foi desenvolvida para uso escolar ou entretenimento. Ideal para atividades de desenvolvimento da coordenação motora e percepção de formas. </p>
             <div class="preco">R$05,90</div>
             <div class="botoes">
-                <a href="carrinho.php"  class="carrinho">adicionar ao carrinho</a>
+                <a href="carrinho.php" class="carrinho">adicionar ao carrinho</a>
             </div>
         </div>
         <div class="preview" data-alvo="p-4">

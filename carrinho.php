@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="shortcut icon" href="img/logo-boasnovas.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <?php include './html/head.php' ?>
 </head>
 <body>
     
@@ -38,7 +39,7 @@
     </div>
 
     <div class="header-user-actions">
-    <a href="loginTeste.php">
+    <a href="login.php">
       <button class="action-btn">
         <ion-icon name="person-outline"></ion-icon>
       </button>
@@ -58,7 +59,7 @@
 <div class="carrinho-container">
     <h2>Carrinho de Compras</h2>
     <div class="carrinho-itens">
-        <div class="carrinho-item" data-preco="206.56">
+        <!-- <div class="carrinho-item" data-preco="206.56">
             <img src="./img/lapisfaber.jpg" alt="Lápis Faber Castell">
             <div class="detalhes-item">
                 <h3>Lápis de Cor, Faber-Castell, EcoLápis Supersoft, 100 Cores</h3>
@@ -112,14 +113,43 @@
                 </div>
                 <button class="btn-remover" onclick="confirmarRemocao(this)">Remover</button>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <div class="resumo-carrinho">
         <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
         <p>Frete: <span id="frete">R$ 10,00</span></p>
         <h3>Total: <span id="total">R$ 0,00</span></h3>
-        <button class="btn-finalizar">Continuar para o Pagamento</button>
+        <button class="btn-finalizar" id="button-pagamento">Continuar para o Pagamento</button>
+        <script>
+            searchElement('button-pagamento').addEventListener('click', async () => {
+                pay();
+            })
+        </script>
+    </div>
+    <div id="div-carrinho-itens">
+        <script>
+            function adicionarItemCarrinho(imagem, nome, preco) {
+                const carrinhoItens = document.querySelector('.carrinho-itens');
+                const itemHTML = `
+                    <div class="carrinho-item" data-preco="${preco}">
+                        <img src="${imagem}" alt="${nome}" style="opacity: 0">
+                        <div class="detalhes-item">
+                            <h3>${nome}</h3>
+                            <p class="preco">R$ ${preco.toFixed(2).replace('.', ',')}</p>
+                            <div class="controle-quantidade">
+                                <button onclick="diminuirQuantidade(this)">-</button>
+                                <input type="number" value="1" min="1" onchange="atualizarTotal()">
+                                <button onclick="aumentarQuantidade(this)">+</button>
+                            </div>
+                            <button class="btn-remover" onclick="confirmarRemocao(this)">Remover</button>
+                        </div>
+                    </div>
+                `;
+                carrinhoItens.insertAdjacentHTML('beforeend', itemHTML);
+                atualizarTotal();
+            }
+        </script>
     </div>
 </div>
 
@@ -184,6 +214,12 @@
     }
 
     document.addEventListener("DOMContentLoaded", atualizarTotal);
+</script>
+
+<script>
+    serverRequests.cart().then(json => json.products.forEach(product => {
+        adicionarItemCarrinho('./img/balao.jpeg', product.nome, product.preco)
+    }))
 </script>
 </body>
 </html>
