@@ -1,7 +1,20 @@
-<?php
+<?php #include
+$connected = true;
 
-$connection = new mysqli("localhost", "root", "", "boasnovas_db");
+if (!isset($scripts)) include 'script.php';
+
+$connectionconfig = include 'connectionconfig.php';
+
+$connection = new mysqli(
+    $connectionconfig['hostname'],
+    $connectionconfig['username'],
+    $connectionconfig['password'],
+    $connectionconfig['database']
+);
 
 if ($connection->connect_error) {
-    die("Erro de conexão ({$connection->connect_errno}): {$connection->connect_error}");
+    $connected = false;
+    die('Connection failed: ' . $connection->connect_error);
 }
+
+unset($connectionconfig);

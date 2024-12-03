@@ -1,0 +1,102 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    background: linear-gradient(to bottom, rgb(255, 211, 129) 0%, var(--orange) 60%);
+    height: 100vh;
+    margin: 0;
+    color: white;
+
+    & * {
+        transition: 0.3s;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #main-section {
+        background-color: #3ebbffcb;
+        border-radius: 12px;
+        grid-row: 2;
+        margin: 24px 0;
+        padding: 12px;
+        display: grid;
+        grid-template-rows: 4fr 20fr;
+        
+        form {
+            display: grid;
+            grid-template-rows: 2fr 10fr 4fr;
+            height: 100%;
+            grid-row: 2;
+    
+            .first {
+                grid-row: 1;
+            }
+    
+            .second {
+                grid-row: 2;
+            }
+    
+            .third {
+                grid-row: 3;
+            }
+        }
+    }
+
+    label {
+        display: block;
+        margin-bottom: 4px;
+        margin-top: 12px;
+        font-weight: bold;
+    }
+
+    input,textarea,button,select {
+        outline: none;
+        border: none;
+        padding: 4px;
+        border-radius: 6px;
+        background-color: white;
+        width: 100%;
+        box-sizing: border-box;
+
+        &:invalid {
+            background-color: #9e5959;
+        }
+
+        option {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    textarea {
+        height: 80%;
+    }
+
+    select:invalid {
+        color: white;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: 24px 0;
+        padding: 12px;
+    }
+
+    .legenda {
+        font-size: 12px;
+        opacity: 0.7;
+        text-indent: 16px;
+
+        .big {
+            font-size: 16px;
+            opacity: 0.85;
+        }
+
+        a {
+            color: rgb(255, 56, 56);
+        }
+    }
+}
